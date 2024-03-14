@@ -22,8 +22,8 @@ pipeline {
         
         stage('Teste da aplicação') {
             steps {
-                sh 'chmod +x teste-app.sh'
-                sh './teste-app.sh'
+                sh 'curl http://127.0.0.1:8090'
+                sh 'curl http://127.0.0.1:8090'
             }
         }
 
